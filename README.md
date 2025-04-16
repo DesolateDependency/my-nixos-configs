@@ -3,10 +3,6 @@
 ## My NixOS Installation
 
 ### Preperation
-
-If unknown errors occure it could be that the installation device got loose.
-
-\
 The tty on the installation device starts as the nixos user. First we have to switch into the root user:
 ```
 $ sudo -i
