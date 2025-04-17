@@ -47,7 +47,6 @@ sudo nixos-generate-config --root /mnt
 Now we have to replace the automaticaly created configuration.nix file with our own.
 ```
 cd /mnt/etc/nixos/
-rm configuration.nix
 curl -OL https://raw.githubusercontent.com/DesolateDependency/my-nixos-configs/main/configuration.nix
 ```
 
