@@ -1,4 +1,4 @@
-# this is a disko setup config to create my partitions with lvm on luks
+# this is a disko setup config to create my partitions with btrfs on luks
 {
     disko.devices = { # ----------------------------------------------------> holds the overall categories (disk, mdadm, lvm_vg[volume groups])
         disk = { # ---------------------------------------------------------> all disks installed in the system like SSDs, HHDs, M.2s etc.
