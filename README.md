@@ -41,19 +41,14 @@ We can see the result if we check the drives again with `lsblk`
 
 We have to generate our nix hardware-configuration file because this will be different on every system.
 ```
-sudo nixos-generate-config --no-filesystems --root /mnt
-```
-\
-Now we want to move our disk-configuration.nix file into the same directory like the other configuration files.
-```
-mv ./disk-configuration.nix /mnt/etc/nixos
+sudo nixos-generate-config --root /mnt
 ```
 \
 Now we have to replace the automaticaly created configuration.nix file with our own.
 ```
 cd /mnt/etc/nixos/
 rm configuration.nix
-curl -OL https://raw.githubusercontent.com/DesolateDependency/My-NixOS-Configs/main/configuration.nix
+curl -OL https://raw.githubusercontent.com/DesolateDependency/my-nixos-configs/main/configuration.nix
 ```
 
 Now we have the chance to adjust the configuration to change things like users.
