@@ -41,7 +41,7 @@ We can see the result if we check the drives again with `lsblk`
 
 We have to generate our nix hardware-configuration file because this will be different on every system.
 ```
-nixos-generate-config --no-filesystems --root /mnt
+sudo nixos-generate-config --no-filesystems --root /mnt
 ```
 \
 Now we want to move our disk-configuration.nix file into the same directory like the other configuration files.
