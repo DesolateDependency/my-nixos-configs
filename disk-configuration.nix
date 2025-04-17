@@ -68,7 +68,7 @@
                                             swap.swapfile.size = "16G"; # --> absolute size for the swap file
                                         };
                                     };
-                                }:
+                                };
                             };
                         };
                     };
