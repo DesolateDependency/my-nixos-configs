@@ -34,6 +34,8 @@
                                     type = "btrfs"; # ----------------------> role for this partition
                                     extraArgs = [ "-f" ]; # ----------------> btrfs args
                                     subvolumes = { # -----------------------> btrfs subvolumes
+
+                                        # root subvolume
                                         "/root" = { # ----------------------> root subvolume
                                             mountpoint = "/"; # ------------> subvolume mountpoint
                                             mountOptions = [ # -------------> mounting options
@@ -41,6 +43,8 @@
                                                 "noatime" # ----------------> ???
                                             ];
                                         };
+
+                                        # home subvolume
                                         "/home" = { # ----------------------> home subvolume
                                             mountpoint = "/home"; # --------> subvolume mountpoint
                                             mountOptions = [ # -------------> mounting options
@@ -48,6 +52,8 @@
                                                 "noatime" # ----------------> ???
                                             ];
                                         };
+
+                                        # nix subvolume
                                         "/nix" = { # -----------------------> nix subvolume
                                             mountpoint = "/nix"; # ---------> subvolume mountpoint
                                             mountOptions = [ # -------------> mounting options
@@ -55,6 +61,8 @@
                                                 "noatime" # ----------------> ???
                                             ];
                                         };
+
+                                        # swap subvolume
                                         "/swap" = { # ----------------------> swap subvolume
                                             mountpoint = "/.swapvol"; # ----> subvolume mountpoint
                                             swap.swapfile.size = "16G"; # --> absolute size for the swap file
