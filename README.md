@@ -53,12 +53,12 @@ curl -OL https://raw.githubusercontent.com/DesolateDependency/my-nixos-configs/m
 
 Now we have the chance to adjust the configuration to change things like users.
 ```
-nano configuration.nix
+sudo nano configuration.nix
 ```
 
 Trigger the installation and reboot the system.
 ```
-nixos-install
+sudo nixos-install
 reboot
 ```
 
