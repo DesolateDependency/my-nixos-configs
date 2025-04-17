@@ -27,7 +27,6 @@
                             content = { # ----------------------------------> contains everything that should happen on this partition
                                 type = "luks"; # ---------------------------> role for this partition
                                 name = "crypted"; # ------------------------> name of partition
-                                extraOpenArgs = [ ]; # ---------------------> ???
                                 settings = { # -----------------------------> settings for this luks partition
                                     allowDiscards = true; # ----------------> ???
                                 };
