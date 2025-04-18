@@ -37,6 +37,18 @@ users.users.<username> = {
 };
 ```
 
+## Nix-channel
+List all added nix channel
+```
+sudo nix-channel --list
+```
+\
+Add unstable
+```
+sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+sudo nix-channel update
+```
+
 ## System generations
 List all system generations:
 ```
