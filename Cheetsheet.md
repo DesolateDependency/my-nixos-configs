@@ -14,6 +14,12 @@ Rebuild, switch after finished, but won't add to bootloader (not updating):
 ```
 sudo nixos-rebuild test
 ```
+\
+Update and rebuild:
+```
+nix-channel --update
+sudo nixos-rebuild switch --upgrade
+```
 
 ## Add user
 Add a new user and set a password:
@@ -29,4 +35,15 @@ users.users.<username> = {
   isNormalUser = true;
   extraGroups = [ "wheel" "input" "networkmanager" ];
 };
+```
+
+## System generations
+List all system generations:
+```
+sudo nix-env -p /nix/var/nix/profiles/system --list-generations
+```
+\
+Garbage collect old generations:
+```
+sudo nix-collect-grabage -d
 ```
