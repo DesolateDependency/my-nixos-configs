@@ -124,8 +124,14 @@ sudo nixos-rebuild switch --flake .
 Setup the standalone home manager.
 ```
 nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-nix-channel --update
-nix-shell '<home-manager>' -A install
+```
+or
+```
+nix-channel --add https://github.com/nix-community/home-manager/archive/release-24.05.tar.gz home-manager
+```
+then
+```
+sudo nix-channel --update
 ```
 If the install command has a "not found" error, reboot the system and retry.
 
