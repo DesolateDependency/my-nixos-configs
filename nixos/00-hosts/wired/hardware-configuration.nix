@@ -55,32 +55,38 @@
 
 
   # Create ~/.smbcredentials first
-  fileSystems."/home/WiredDesdpy/TrueNAS/Sascha" =
-    { device = "//10.10.20.20/Sascha";
+  fileSystems."/home/WiredDesdpy/TrueNAS/sascha" =
+    { device = "//10.10.20.20/sascha";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
-  fileSystems."/home/WiredDesdpy/TrueNAS/Aireen" =
-    { device = "//10.10.20.20/Aireen";
+  fileSystems."/home/WiredDesdpy/TrueNAS/aireen" =
+    { device = "//10.10.20.20/aireen";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
-  fileSystems."/home/WiredDesdpy/TrueNAS/Nanay" =
-    { device = "//10.10.20.20/Nanay";
+  fileSystems."/home/WiredDesdpy/TrueNAS/nanay" =
+    { device = "//10.10.20.20/nanay";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
-  fileSystems."/home/WiredDesdpy/TrueNAS/Familienfotos_und_videos" =
-    { device = "//10.10.20.20/Familienfotos_und_videos";
+  fileSystems."/home/WiredDesdpy/TrueNAS/familienfotos_und_videos" =
+    { device = "//10.10.20.20/familienfotos_und_videos";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
-  fileSystems."/home/WiredDesdpy/TrueNAS/Database" =
-    { device = "//10.10.20.20/Database";
+  fileSystems."/home/WiredDesdpy/TrueNAS/database" =
+    { device = "//10.10.20.20/database";
+      fsType = "cifs";
+      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
+    };
+
+  fileSystems."/home/WiredDesdpy/TrueNAS/media" =
+    { device = "//10.10.20.20/media";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
@@ -88,49 +94,49 @@
 
 
   fileSystems."/home/WiredDesdpy/Desktop" =
-    { device = "//10.10.20.20/Sascha/Desktop";
+    { device = "//10.10.20.20/sascha/Desktop";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Documents" =
-    { device = "//10.10.20.20/Sascha/Documents";
+    { device = "//10.10.20.20/sascha/Documents";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
     
   fileSystems."/home/WiredDesdpy/Downloads" =
-    { device = "//10.10.20.20/Sascha/Downloads";
+    { device = "//10.10.20.20/sascha/Downloads";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Music" =
-    { device = "//10.10.20.20/Sascha/Music";
+    { device = "//10.10.20.20/sascha/Music";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Pictures" =
-    { device = "//10.10.20.20/Sascha/Pictures";
+    { device = "//10.10.20.20/sascha/Pictures";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Videos" =
-    { device = "//10.10.20.20/Sascha/Videos";
+    { device = "//10.10.20.20/sascha/Videos";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Public" =
-    { device = "//10.10.20.20/Sascha/Public";
+    { device = "//10.10.20.20/sascha/Public";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
   fileSystems."/home/WiredDesdpy/Templates" =
-    { device = "//10.10.20.20/Sascha/Templates";
+    { device = "//10.10.20.20/sascha/Templates";
       fsType = "cifs";
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
