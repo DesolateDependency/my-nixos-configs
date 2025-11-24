@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     virt-manager
     virt-viewer
-    win-virtio
+    virtio-win
     spice
     spice-gtk
     spice-protocol
@@ -15,8 +15,6 @@
       enable = true;
       qemu = {
         swtpm.enable = true;
-        ovmf.enable = true;
-        ovmf.packages = with pkgs; [ OVMFFull.fd ];
         vhostUserPackages = with pkgs; [ virtiofsd ];
       };
     };
