@@ -57,8 +57,15 @@
     # check ~/.config/plasma-org.kde.plasma.desktop-appletsrc or /run/current-system/sw/share/plasma/plasmoids/ for values
     panels = [
 
-      # Top left
       {
+        floating = true;
+        height = 34;
+        hiding = "dodgewindows";
+        screen = "all";
+      }
+
+      # Top left
+      /* {
         alignment = "left";
         lengthMode = "fit";
         floating = true;
@@ -341,7 +348,7 @@
           "org.kde.plasma.marginsseparator"
         ];
         screen = "all";
-      }
+      } */
 
 
       # Trying out stuff
