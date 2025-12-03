@@ -46,7 +46,6 @@
         mullvad-vpn &
         plasma-apply-wallpaperimage $HOME/nix/wallpapers/walls-catppuccin-mocha/river-city.jpg &
         signal-desktop &
-        tutanota-desktop &
         discord &
         qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Switch to Desktop 5" &
       '';
@@ -62,6 +61,7 @@
         height = 34;
         hiding = "dodgewindows";
         screen = "all";
+        location = "bottom";
       }
 
       # Top left
@@ -653,7 +653,7 @@
       # Apps & Windows -> Window Management -> KWin Scripts -> Krohnkite
       "kwinrc"."Plugins"."krohnkiteEnabled" = true;
       "kwinrc"."Script-krohnkite"."screenGapBetween" = 8;
-      "kwinrc"."Script-krohnkite"."screenGapBottom" = 50;
+      "kwinrc"."Script-krohnkite"."screenGapBottom" = 8;
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
       "kwinrc"."Script-krohnkite"."screenGapTop" = 8;
@@ -677,10 +677,10 @@
       "kwinrc"."Round-Corners"."SecondOutlineThickness" = 3;
 
       # Apps & Windows -> Default Applications -> Default Applications
-      "mimeapps.list"."Added Associations"."x-scheme-handler/http" = "librewolf.desktop";
-      "mimeapps.list"."Added Associations"."x-scheme-handler/https" = "librewolf.desktop";
-      "mimeapps.list"."Default Applications"."x-scheme-handler/http" = "librewolf.desktop";
-      "mimeapps.list"."Default Applications"."x-scheme-handler/https" = "librewolf.desktop";
+      "mimeapps.list"."Added Associations"."x-scheme-handler/http" = "zen-browser.desktop";
+      "mimeapps.list"."Added Associations"."x-scheme-handler/https" = "zen-browser.desktop";
+      "mimeapps.list"."Default Applications"."x-scheme-handler/http" = "zen-browser.desktop";
+      "mimeapps.list"."Default Applications"."x-scheme-handler/https" = "zen-browser.desktop";
       # "kdeglobals"."General"."TerminalApplication" = "foot";
       # "kdeglobals"."General"."TerminalService" = "foot.desktop";
 

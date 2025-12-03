@@ -15,7 +15,6 @@
     ../programs/fastfetch.nix
     ../programs/tree.nix
     ../programs/xournalpp.nix
-    ../programs/thunderbird.nix
     ../programs/gnome-disk-utility.nix
     ../programs/skanpage.nix
     ../programs/protonmail-desktop.nix
@@ -37,11 +36,12 @@
     ../programs/gimp.nix
     ../programs/libreoffice.nix
     ../programs/vdhcoapp.nix
-    ../programs/tutanota-desktop.nix
     ../programs/rustdesk-flutter.nix
     ../programs/audacity.nix
     ../programs/fluent-reader.nix
     ../programs/android-tools.nix
     ../browser.nix
+    ../messengers.nix
+    ../productivity.nix
   ];
 }
