@@ -61,12 +61,6 @@
       options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
     };
 
-  fileSystems."/home/WiredDesdpy/TrueNAS/aireen" =
-    { device = "//10.10.20.20/aireen";
-      fsType = "cifs";
-      options = [ "credentials=/home/WiredDesdpy/.smbcredentials" "uid=1000" "gid=100" "nofail" ];
-    };
-
   fileSystems."/home/WiredDesdpy/TrueNAS/nanay" =
     { device = "//10.10.20.20/nanay";
       fsType = "cifs";

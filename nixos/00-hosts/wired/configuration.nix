@@ -14,7 +14,6 @@
     ../../vpn.nix
     ../../yubikeys.nix   # Only use after creating ~/.config/Yubico/u2f_keys file! + indirectly locks root user :)
     ../../virtual-machines.nix   # Add libvirtd to usergroups!
-    ../../waydroid.nix
     ../../gaming.nix
     ../../virtual-reality.nix
     ../../printing-scanning.nix

@@ -1,6 +1,6 @@
 { pkgs, ... }: {
 
-  programs.librewolf = {
+  /* programs.librewolf = {
     enable = true;
     profiles = {
       default = {
@@ -16,10 +16,10 @@
         };
       };
     };
-  };
+  }; */
 
   home.packages = with pkgs; [ 
     brave
-    chromium
+    # chromium
   ];
 }

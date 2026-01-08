@@ -1,7 +1,6 @@
 { pkgs, ... }: {
+
   home.packages = with pkgs; [ 
-    nextcloud-client
-    asunder
-    joplin-desktop
+    # osu-lazer-bin
   ];
 }

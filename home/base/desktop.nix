@@ -29,7 +29,6 @@
     ../programs/signal-desktop-bin.nix
     ../programs/unityhub.nix
     ../programs/vrc-get.nix
-    ../programs/discord.nix
     ../programs/mpv.nix
     ../programs/pdftk.nix
     ../programs/gimp.nix
@@ -42,5 +41,7 @@
     ../browser.nix
     ../messengers.nix
     ../productivity.nix
+    ../games.nix
+    ../content-creation.nix
   ];
 }
