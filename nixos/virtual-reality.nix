@@ -20,6 +20,6 @@
   };
 
   environment.systemPackages = [
-    pkgs.wlx-overlay-s
+    pkgs.wayvr
   ];
 }

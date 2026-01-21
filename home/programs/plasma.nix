@@ -651,7 +651,7 @@
       # Apps & Windows -> Window Management -> KWin Scripts -> Krohnkite
       "kwinrc"."Plugins"."krohnkiteEnabled" = true;
       "kwinrc"."Script-krohnkite"."screenGapBetween" = 8;
-      "kwinrc"."Script-krohnkite"."screenGapBottom" = 8;
+      "kwinrc"."Script-krohnkite"."screenGapBottom" = 50;
       "kwinrc"."Script-krohnkite"."screenGapLeft" = 8;
       "kwinrc"."Script-krohnkite"."screenGapRight" = 8;
       "kwinrc"."Script-krohnkite"."screenGapTop" = 8;
